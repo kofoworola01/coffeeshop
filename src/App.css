@@ -1,38 +1,157 @@
 .App {
+  background-image: 
+    linear-gradient(to right, rgba(241, 155, 150, 0.2), rgba(250, 170, 32, 0.2)),
+    url(./img/coffee_b.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  color: white;
+  padding: 5px;
+}
+.nav-container {
+  position: relative;
+  height: 50px;
+  padding: 5px 150px;
+}
+.title {
+  position: absolute;
+  font-weight: bolder;
+  font-size: 30px;
+  top: 10px;
+  color: goldenrod;
+}
+.nav-links {
+  list-style: none;
+  font-size: 17px;
+  font-weight: bold;
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  display: inline-block;
+  /* color: gold; */
+  padding: 0 0 0 50px;
+}
+
+ul {
+  float: right;
+}
+.nav-links a {
+  color: gold;
+}
+a {
+  text-decoration: none;
+}
+
+.nav-links:hover {
+  transform: translateY(-3px);
+  text-shadow: 2px 2px 9px black;
+}
+.center {
   text-align: center;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.home {
+  position: relative;
+  margin-top: 150px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
 }
+.menu {
+  font-size: 11.5px;
+  text-transform: uppercase;
+  border: 1px solid wheat;
+  padding: 5px 15px;
+  text-align: center;
+  margin: 25px auto auto auto;
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+  width: 90px;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+.menu a {
   color: white;
 }
-
-.App-link {
-  color: #61dafb;
+/* img {
+  height: 200px;
+} */
+.card {
+box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+max-width: 300px;
+text-align: center;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.price {
+color: grey;
+font-size: 22px;
 }
+
+.card button {
+border: none;
+/* outline: 0; */
+padding: 12px;
+color: white;
+background-color: rgb(133, 96, 5);
+text-align: center;
+cursor: pointer;
+width: 100%;
+font-size: 18px;
+}
+
+.card button:hover {
+opacity: 0.7;
+}
+
+.item-container {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  width: 90%;
+  margin: auto;
+  background-color: rgb(243, 235, 235, 0.8);
+}
+.item-box {
+  margin: 12px 6px 0 6px
+}
+
+
+
+
+
+
+
+/* .sidebar {
+  position: fixed;
+  width: 200px;
+  height: 75vh;
+  padding: 7px;
+  background: rgba(0, 0, 0, 0.877);
+  left: -200px;
+  transition: all 500ms linear;
+  cursor: pointer;
+}
+.toggle-btn {
+  position: absolute;
+  left: 230px;
+  top: 20px;
+}
+.sidebar.active {
+  left: 0px;
+}
+.toggle-btn span {
+  display: block;
+  width: 30px;
+  height: 3px;
+  padding: 1px;
+  margin: 3px;
+  background-color: pink;
+  cursor: pointer;
+}
+.sidebar-links li {
+  border-bottom: 1px solid white;
+  text-align: center;
+  list-style: none;
+  padding: 15px;
+  text-transform: capitalize;
+}
+.sidebar-links li a {
+  color: whitesmoke;
+  text-decoration: none;
+} */
