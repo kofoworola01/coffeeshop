@@ -53,8 +53,7 @@ a {
 .home {
   position: relative;
   margin-top: 150px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  
+  font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 .menu {
   font-size: 11.5px;
@@ -63,15 +62,11 @@ a {
   padding: 5px 15px;
   text-align: center;
   margin: 25px auto auto auto;
-
   width: 90px;
 }
 .menu a {
   color: white;
 }
-/* img {
-  height: 200px;
-} */
 .card {
 box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
 max-width: 300px;
@@ -85,10 +80,9 @@ font-size: 22px;
 
 .card button {
 border: none;
-/* outline: 0; */
 padding: 12px;
 color: white;
-background-color: rgb(133, 96, 5);
+background-color: rgb(143, 104, 7);
 text-align: center;
 cursor: pointer;
 width: 100%;
@@ -111,11 +105,75 @@ opacity: 0.7;
   margin: 12px 6px 0 6px
 }
 
-
-
-
-
-
+.cart-wrapper {
+  position: relative;
+}
+.cart-count {
+  position: absolute;
+  height: 15px;
+  width: 15px;
+  top: -8px;
+  border-radius: 50px;
+  background-color: brown;
+  color: white;
+  left: 20px;
+  display: flex;
+  justify-content: center;
+  font-size: 12px;
+  font-weight: bold;
+  padding: 3px;
+}
+.contact-wrapper {
+  display: flex;
+  flex-direction: row;
+  height: 400px;
+  background-color: rgb(250, 241, 241);
+  /* padding: 5px; */
+  margin: 0 70px 0 70px;
+}
+.contact-msg {
+  display: flex;
+  flex-direction: column;
+  height: 95%;
+  width: 55%;
+  padding: 5px 0 5px 35px;
+  margin: 5px;
+}
+.msg {
+  width: 85%;
+  height: 40px;
+  margin-bottom: 30px;
+  padding-left: 17px;
+  background-color: rgb(187, 186, 184, 0.2);
+  border-style: none;
+}
+.msg-box {
+  height: 90px;
+}
+.send-box {
+  margin-bottom: 20px;
+  background-color: rgb(216, 158, 11);
+}
+.msg-name {
+  margin-top: 10px;
+}
+.contact-info {
+  /* background-color: red; */
+  height: 95%;
+  width: 55%;
+  margin: 5px;
+}
+.msg-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 95%;
+  padding: 15px;
+  color: black;
+  border-left: .5px solid gray;
+  
+}
 
 /* .sidebar {
   position: fixed;

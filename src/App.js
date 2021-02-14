@@ -1,12 +1,13 @@
 import './App.css'
-import Navbar from './Components/Navbar'
 import { BrowserRouter, Route } from 'react-router-dom'
 // import { Home, Menu, Location, Contact} from './Components/';
+import Navbar from './Components/Navbar'
 import Home from './Components/Home'
 import Menu from './Components/Menu'
 import Location from './Components/Location'
 import Contact from './Components/Contact'
-// import Sidebar from './Components/Sidebar'
+import Cart from './Components/Cart'
+
 
 
 
@@ -20,7 +21,7 @@ function App() {
         <Route path='/menu' component={Menu} />
         <Route path='/location' component={Location} />
         <Route path='/contact' component={Contact} />
-        {/* <Route path='/sidebar' component ={Sidebar} /> */}
+        {/* <Route path='/cart' component={Cart} /> */}
       </div>
     </BrowserRouter>
 
