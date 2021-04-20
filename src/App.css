@@ -8,43 +8,95 @@
   color: white;
   padding: 5px;
 }
-.nav-container {
-  position: relative;
-  height: 50px;
-  padding: 5px 150px;
-}
-.title {
-  position: absolute;
-  font-weight: bolder;
-  font-size: 30px;
-  top: 10px;
-  color: goldenrod;
-}
-.nav-links {
-  list-style: none;
-  font-size: 17px;
-  font-weight: bold;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  display: inline-block;
-  /* color: gold; */
-  padding: 0 0 0 50px;
-}
 
-ul {
-  float: right;
-}
-.nav-links a {
-  color: gold;
+:root {
+  --text-gold: gold;
+  --bg-color : rgb(12, 12, 12);
+  --sky: linear-gradient(120deg, #a1c4fd 0%, #c2e9fb 100%);
 }
 a {
   text-decoration: none;
 }
+.text-black {
+  color: var(--text-gold);
+}
+.nav {
+  padding: 0 2rem;
+  /* background: var(--sky); */
+  position: relative;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  height: 0rem;
+  min-height: 9vh;
+  overflow-y: hidden;
+  transition: height 1s ease;
+}
+nav .nav-brand a {
+  display: block;
+  padding: 1rem 0;
+  text-decoration: none;
+  font-size: 1.6rem;
+}
+nav .nav-items {
+  margin-top: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  list-style-type: none;
+  text-decoration: none;
+}
+nav .nav-items .nav-link {
+  padding: 1.3rem 1rem;
+  font-size: 1.1rem;
+}
 
-.nav-links:hover {
-  transform: translateY(-3px);
+nav .nav-items .nav-link a:hover {
+  color: wheat;
+}
+.toggle-collapse {
+  position: absolute;
+  top: 0%;
+  width: 100%;
+  cursor: pointer;
+  display: none;
+
+}
+nav .toggle-collapse .toggle-btn {
+  position: absolute;
+  right: .5rem;
+  padding: 1.4rem 4rem;
+}
+.toggle-btn span {
+  display: block;
+  width: 30px;
+  height: 2px;
+  padding: 1px;
+  margin: 3px;
+  background-color: var(--bg-color);
+}
+.collapse {
+  height: 25rem;
+}
+@media only screen and (max-width: 800px) {
+  .nav {
+      padding-bottom: 5px;
+      min-height: 7vh;
+  }
+  nav .nav-items {
+      flex-direction: column;
+  }
+  nav {
+      flex-direction: column !important;
+      display:  block !important;
+  }
+  .toggle-collapse {
+      display: initial;
+  }
+}
+nav .nav-link:hover {
+  transform: translateY(-6px);
   text-shadow: 2px 2px 9px black;
 }
 .center {
@@ -52,7 +104,7 @@ a {
 }
 .home {
   position: relative;
-  margin-top: 150px;
+  margin-top: 200px;
   font-family: Verdana, Geneva, Tahoma, sans-serif; 
 }
 .menu {
@@ -61,7 +113,7 @@ a {
   border: 1px solid wheat;
   padding: 5px 15px;
   text-align: center;
-  margin: 25px auto auto auto;
+  margin: 10px auto auto auto;
   width: 90px;
 }
 .menu a {
@@ -92,7 +144,9 @@ font-size: 18px;
 .card button:hover {
 opacity: 0.7;
 }
-
+.contact-container {
+  margin-top: 18px;
+}
 .item-container {
   display: flex;
   justify-content: space-around;
@@ -135,7 +189,7 @@ opacity: 0.7;
   display: flex;
   flex-direction: column;
   height: 95%;
-  width: 55%;
+  width: 70%;
   padding: 5px 0 5px 35px;
   margin: 5px;
 }
@@ -174,42 +228,59 @@ opacity: 0.7;
   border-left: .5px solid gray;
   
 }
-
-/* .sidebar {
-  position: fixed;
-  width: 200px;
-  height: 75vh;
-  padding: 7px;
-  background: rgba(0, 0, 0, 0.877);
-  left: -200px;
-  transition: all 500ms linear;
-  cursor: pointer;
+.des {
+  background-color: #fff;
+  color: black;
+  display: flex;
+  justify-content: space-around;
 }
-.toggle-btn {
-  position: absolute;
-  left: 230px;
-  top: 20px;
+.des-image img {
+  height: 300px;
 }
-.sidebar.active {
-  left: 0px;
+.des-image {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 3px;
 }
-.toggle-btn span {
-  display: block;
-  width: 30px;
-  height: 3px;
-  padding: 1px;
-  margin: 3px;
-  background-color: pink;
-  cursor: pointer;
-}
-.sidebar-links li {
-  border-bottom: 1px solid white;
+.des-btn {
+  border: none;
+  padding: 12px;
+  margin-top: 20px;
+  color: white;
+  background-color: rgb(143, 104, 7);
   text-align: center;
-  list-style: none;
-  padding: 15px;
-  text-transform: capitalize;
+  cursor: pointer;
+  width: 50%;
+  font-size: 18px;
+  }
+.des-content {
+  padding: 5px 10px;
+  margin-left: 70px;
 }
-.sidebar-links li a {
-  color: whitesmoke;
-  text-decoration: none;
+.line {
+  height: 1px;
+  width: 70%;
+  background: gainsboro;
+}
+.des-price {
+  font-weight: bold;
+  font-size: 30px;
+  margin: 10px 0;
+}
+.qty {
+  display: flex;
+  margin: 30px 0;
+}
+table, td, tr {
+  border: 1px solid rgb(196, 192, 192);
+  border-collapse: collapse;
+}
+td , tr {
+  padding: 1px 10px;
+}
+/* @media only screen and ( min-width: 600px) {
+  .contact-wrapper {
+    flex-direction: column;
+  }
 } */

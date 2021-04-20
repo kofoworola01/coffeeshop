@@ -6,8 +6,8 @@ import { faLocationArrow } from '@fortawesome/free-solid-svg-icons'
 
 export default function Contact() {
     return (
-        <div>
-            <h1 className='center'>Contact</h1>
+        <div className='contact-container'>
+            <h1 className='center' style={{marginBottom: '20px'}}>Contact</h1>
             <div className='contact-wrapper'>
                 <div className='contact-msg'>
                     <h2 style={{color: 'black'}}>Get In Touch</h2>
