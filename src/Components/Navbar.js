@@ -35,7 +35,6 @@ export default function Navbar(props) {
                     <li className="nav-link"><Link to='/Location' className="text-black">Locations</Link></li>
                     <li className="nav-link"><Link to='/Cart' className="text-black"><Cart count={props.count} /></Link></li>
                     <li className="nav-link"><Link to='/Contact' className="text-black">Contact Us</Link></li>
-                    <li className='nav-link'><Link to='Des' className='text-black'>Des</Link></li>    
                     
                 </ul>
             </nav>

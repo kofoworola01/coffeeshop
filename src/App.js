@@ -26,7 +26,7 @@ const [cart, setCart] = useState([])
         <Route path='/menu' render= {() => <Menu  addToCart={addToCart} />}  />
         <Route path='/location' component={Location} />
         <Route path='/contact' component={Contact} />
-        <Route path='/des' component={Des} />
+        <Route path='/des'  render= {(props) => <Des  addToCart={addToCart} {...props} />}/>
       </div>
     </BrowserRouter>
 
