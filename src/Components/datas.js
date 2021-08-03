@@ -10,7 +10,7 @@ import coffee3 from '../img/item5.jpg'
         name: 'Caffe Latte',
         price: 130.88,
         description: 'We believe a cup of coffee is one of the most important simple pleasures of life',
-        qty: 2,
+        qty: 1,
         img: coffee
     },
     {
@@ -18,7 +18,7 @@ import coffee3 from '../img/item5.jpg'
         name: 'Espresso',
         price: 149.99,
         description: 'We believe a cup of coffee is one of the most important simple pleasures of life',
-        qty: 2,
+        qty: 1,
         img: coffee1
     },
     {
@@ -26,7 +26,7 @@ import coffee3 from '../img/item5.jpg'
         name: 'Coffee Mocha',
         price: 10.99,
         description: 'We believe a cup of coffee is one of the most important simple pleasures of life',
-        qty: 2,
+        qty: 1,
         img: coffee2
     },
     {
@@ -34,7 +34,7 @@ import coffee3 from '../img/item5.jpg'
         name: 'Americano',
         price: 70.88,
         description: 'We believe a cup of coffee is one of the most important simple pleasures of life',
-        qty: 2,
+        qty: 1,
         img: coffee1
     },
     {
@@ -42,7 +42,7 @@ import coffee3 from '../img/item5.jpg'
         name: 'Coffee Latte',
         price: 130.88,
         description: 'We believe a cup of coffee is one of the most important simple pleasures of life',
-        qty: 2,
+        qty: 1,
         img: coffee3
     },
     {
@@ -50,7 +50,7 @@ import coffee3 from '../img/item5.jpg'
         name: 'Coffee Latte',
         price: 10.88,
         description: 'We believe a cup of coffee is one of the most important simple pleasures of life',
-        qty: 2,
+        qty: 1,
         img: coffee
     },
     {
@@ -58,7 +58,7 @@ import coffee3 from '../img/item5.jpg'
         name: 'Coffee Latte',
         price: 10.88,
         description: 'We believe a cup of coffee is one of the most important simple pleasures of life',
-        qty: 2,
+        qty: 1,
         img: coffee
     },
     {
@@ -66,7 +66,7 @@ import coffee3 from '../img/item5.jpg'
         name: 'Coffee Latte',
         price: 130.88,
         description: 'We believe a cup of coffee is one of the most important simple pleasures of life',
-        qty: 2,
+        qty: 1,
         img: coffee3
     },
     {
@@ -74,7 +74,7 @@ import coffee3 from '../img/item5.jpg'
         name: 'Espresso',
         price: 149.99,
         description: 'We believe a cup of coffee is one of the most important simple pleasures of life',
-        qty: 2,
+        qty: 1,
         img: coffee1
     }
 

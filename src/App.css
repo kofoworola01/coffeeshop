@@ -22,7 +22,6 @@ a {
 }
 .nav {
   padding: 0 2rem;
-  /* background: var(--sky); */
   position: relative;
   display: flex;
   flex-direction: row;
@@ -50,11 +49,9 @@ nav .nav-items {
 nav .nav-items .nav-link {
   padding: 1.3rem 1rem;
   font-size: 1.1rem;
+  margin-left: 50px;
 }
 
-nav .nav-items .nav-link a:hover {
-  color: wheat;
-}
 .toggle-collapse {
   position: absolute;
   top: 0%;
@@ -120,7 +117,7 @@ nav .nav-link:hover {
   color: white;
 }
 .card {
-box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+box-shadow: 0 8px 18px 0 rgba(0, 0, 0, 0.2);
 max-width: 300px;
 text-align: center;
 }
@@ -153,10 +150,10 @@ opacity: 0.7;
   flex-wrap: wrap;
   width: 90%;
   margin: auto;
-  background-color: rgb(243, 235, 235, 0.8);
 }
 .item-box {
-  margin: 12px 6px 0 6px
+  margin: 12px 6px 0 6px;
+  border-radius: 50px;
 }
 
 .cart-wrapper {
@@ -279,8 +276,4 @@ table, td, tr {
 td , tr {
   padding: 1px 10px;
 }
-/* @media only screen and ( min-width: 600px) {
-  .contact-wrapper {
-    flex-direction: column;
-  }
-} */
+
